@@ -22,7 +22,7 @@ export default function HomePage() {
         <GallerySection />
         <BookingSection />
       </main>
-      <SpotifyPlayer />
+      {/* <SpotifyPlayer /> */}
       <Footer />
     </div>
   )
