@@ -108,12 +108,10 @@ export function BookingSection() {
                         <SelectValue placeholder="Select event type" />
                       </SelectTrigger>
                       <SelectContent>
-                        <SelectItem value="club">Club Night</SelectItem>
-                        <SelectItem value="festival">Festival</SelectItem>
-                        <SelectItem value="private">Private Party</SelectItem>
+                        <SelectItem value="live-concert">Live in Concert</SelectItem>
                         <SelectItem value="corporate">Corporate Event</SelectItem>
-                        <SelectItem value="wedding">Wedding</SelectItem>
-                        <SelectItem value="other">Other</SelectItem>
+                        <SelectItem value="wedding">Weddings</SelectItem>
+                        <SelectItem value="other">Others</SelectItem>
                       </SelectContent>
                     </Select>
                   </div>
