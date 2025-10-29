@@ -172,10 +172,10 @@ export function BookingSection() {
                     </Select>
                   </div>
                   <div className="space-y-2">
-                    <Label htmlFor="budget">Budget Range</Label>
+                    <Label htmlFor="budget">Select band</Label>
                     <Select onValueChange={(value) => handleChange("budget", value)}>
                       <SelectTrigger className="bg-gray-700 border-gray-600 text-white">
-                        <SelectValue placeholder="Select budget range" />
+                        <SelectValue placeholder="Select band" />
                       </SelectTrigger>
                       <SelectContent>
                         <SelectItem value="under-50k">Under $50k</SelectItem>
