@@ -41,23 +41,18 @@ export function HeroSection() {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
 
-            {/* Floating stats overlay */}
+            {/* Spotify embedded player overlay */}
             <div className="absolute bottom-6 left-6 right-6">
-              <div className="bg-black/80 backdrop-blur-sm rounded-lg p-4 border border-green-500/30">
-                <div className="grid grid-cols-3 gap-4 text-center">
-                  <div>
-                    <div className="text-2xl font-bold text-green-400">30+</div>
-                    <div className="text-xs text-gray-300">Labels</div>
-                  </div>
-                  <div>
-                    <div className="text-2xl font-bold text-green-400">300+</div>
-                    <div className="text-xs text-gray-300">Events</div>
-                  </div>
-                  <div>
-                    <div className="text-2xl font-bold text-green-400">100+</div>
-                    <div className="text-xs text-gray-300">Tracks</div>
-                  </div>
-                </div>
+              <div className="bg-black/90 backdrop-blur-md rounded-2xl overflow-hidden border border-gray-800/50">
+                <iframe
+                  src="https://open.spotify.com/embed/track/2OIoqI00cXI5wUuZxYoWMx?utm_source=generator&theme=0"
+                  width="100%"
+                  height="152"
+                  frameBorder="0"
+                  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                  loading="lazy"
+                  className="rounded-2xl"
+                ></iframe>
               </div>
             </div>
           </div>

@@ -173,17 +173,13 @@ export function BookingSection() {
                   </div>
                   <div className="space-y-2">
                     <Label htmlFor="budget">Select band</Label>
-                    <Select onValueChange={(value) => handleChange("budget", value)}>
-                      <SelectTrigger className="bg-gray-700 border-gray-600 text-white">
-                        <SelectValue placeholder="Select band" />
-                      </SelectTrigger>
-                      <SelectContent>
-                        <SelectItem value="under-50k">Under $50k</SelectItem>
-                        <SelectItem value="50k-100k">$50k - $100k</SelectItem>
-                        <SelectItem value="100k-250k">$100k - $250k</SelectItem>
-                        <SelectItem value="250k+">$250k+</SelectItem>
-                      </SelectContent>
-                    </Select>
+                    <Input
+                      id="budget"
+                      value={formData.budget}
+                      onChange={(e) => handleChange("budget", e.target.value)}
+                      className="bg-gray-700 border-gray-600 text-white"
+                      placeholder="Enter band name"
+                    />
                   </div>
                 </div>
 
